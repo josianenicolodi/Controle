@@ -8,9 +8,16 @@ namespace ControleTurma
 {
     class Aluno
     {
+        public string nome;
+
         public float nota1;
         public float nota2;
         public float nota3;
+
+        public Aluno()
+        {
+            Console.WriteLine("Criado um aluno");
+        }
 
         public Aluno(float n1,float n2, float n3)
         {

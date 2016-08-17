@@ -11,10 +11,22 @@ namespace ControleTurma
         static void Main(string[] args)
         {
 
-            Aluno al = new Aluno(4f, 5.3f, 9f);
+            Aluno al = new Aluno();
+
+            Console.WriteLine("Digite o nome do aluno:");
+            al.nome = Console.ReadLine();
+
+            Console.WriteLine("Digite o nota1: ");
+            al.nota1 = float.Parse( Console.ReadLine() );
+
+            Console.WriteLine("Digite o nota2: ");
+            al.nota2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o nota3: ");
+            al.nota3 = float.Parse(Console.ReadLine());
 
             Console.WriteLine("Media: " + al.GetMedia());
-            Console.WriteLine("Aluno foi: " + al.Passou());
+            Console.WriteLine(al.nome +" " + al.Passou());
 
             Console.ReadLine();
         }
